@@ -104,10 +104,11 @@ function getAccessToken(){ //return (accessToken, refreshToken)
     return (accessToken, refreshToken);
 };
 
-function getRecs(accessToken, seedTracks, seedArtists, targetEnergy, targetDanceability, 
+function getRecs(accessToken, limit, seedTracks, seedArtists, targetEnergy, targetDanceability, 
                   targetValence, targetInstrumentalness){
   const recommendationsURL = 'https://api.spotify.com/v1/recommendations';
   const queryParams = new URLSearchParams({
+    limit: limit,
     seed_tracks: seedTracks,
     seed_artists: seedArtists,
     target_energy: targetEnergy,
