@@ -2,10 +2,18 @@ extends layout
 
 block content
   h1 #{title}
-  //- p Welcome to #{title}
-  div
-    p Ready to explore?
-    img(src="/images/spotify_signin.png")
-  //- a(href="https://accounts.spotify.com/authorize?client_id=3e2dcb2182d9492b8f6dedeb8aaad06e&response_type=code&redirect_uri=http://localhost:3000/galaxy&scope=user-top-read") Sign in with Spotify
-  //- a(href='https://accounts.spotify.com/authorize?client_id=3e2dcb2182d9492b8f6dedeb8aaad06e&response_type=code&redirect_uri=http://localhost:3000/galaxy&scope=user-top-readn')
-  //-   img(src="/../public/images/spotify_signin.png")
+  div(style='display:flex;')
+    div
+      div
+        img(src="/images/rocket.png" style='width:450px; height:644px; margin-top: -100px; position:relative; left:150px;')
+      div
+        img(src="/images/pink_moon.png" style='width:800px; height:559px; margin-top:-370px; position:relative; z-index:-1;' )
+    //- p Welcome to #{title}
+    div(style='display:flex; flex-direction:column; justify-content:flex-end;')
+      div(style='display:inline; text-align:center;')
+        p(style='font-size:100px; font-family: Trispace; margin-bottom: 0px; display:inline; text-align:center;') Ready to explore?
+      div
+        //- img(src="/images/spotify_signin.png")
+        a(href="https://accounts.spotify.com/authorize?client_id=3e2dcb2182d9492b8f6dedeb8aaad06e&response_type=code&redirect_uri=http://localhost:3000/galaxy&scope=user-top-read")
+          div
+            img(src="/images/spotify_signin.png")
