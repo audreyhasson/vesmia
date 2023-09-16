@@ -1,6 +1,11 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
-  a(href="https://accounts.spotify.com/authorize?client_id=3e2dcb2182d9492b8f6dedeb8aaad06e&response_type=code&redirect_uri=http://localhost:3000/galaxy&scope=user-top-read") login
+  h1 #{title}
+  //- p Welcome to #{title}
+  div
+    p Ready to explore?
+    img(src="/images/spotify_signin.png")
+  //- a(href="https://accounts.spotify.com/authorize?client_id=3e2dcb2182d9492b8f6dedeb8aaad06e&response_type=code&redirect_uri=http://localhost:3000/galaxy&scope=user-top-read") Sign in with Spotify
+  //- a(href='https://accounts.spotify.com/authorize?client_id=3e2dcb2182d9492b8f6dedeb8aaad06e&response_type=code&redirect_uri=http://localhost:3000/galaxy&scope=user-top-readn')
+  //-   img(src="/../public/images/spotify_signin.png")
