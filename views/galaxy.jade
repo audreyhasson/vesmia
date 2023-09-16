@@ -1,10 +1,14 @@
 extends layout
 
 block content
-  //- h1= title
-  div
+  div(style='display:flex; flex-direction:column;')
     div
         img(src="/images/logo.png" style='width: 200px; height:140px; margin-left: 50px; margin-top: -10px;')
-    div(id="galaxyCanvas", class="canvasBox", width="1300", height="1000")
-    div
-          img(src="/images/planet_main.png" style='width:400px; position:relative;z-index:-1; height:279px; left:0; bottom:0; margin-left: -100px; margin-bottom: -630px;')
+    div(style='display:flex;')
+      div
+        div(id="galaxyCanvas", class="canvasBox", width="1300", height="1000")
+        div
+              img(src="/images/planet_main.png" style='width:400px; position:relative;z-index:-1; height:279px; left:0; bottom:0; margin-left: -100px; margin-bottom: -680px;')
+
+      div
+          img(src="/images/key.png" style='position:absolute; left:950px; bottom:0; margin-bottom:50px; width:400px; height:603px;')
