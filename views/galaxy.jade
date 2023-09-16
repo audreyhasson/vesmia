@@ -1,6 +1,10 @@
 extends layout
 
 block content
-  h1= title
-  div(id="galaxyCanvas", class="canvasBox", width="1300", height="1000")
-  
+  //- h1= title
+  div
+    div
+        img(src="/images/logo.png" style='width: 200px; height:140px; margin-left: 50px; margin-top: -10px;')
+    div(id="galaxyCanvas", class="canvasBox", width="1300", height="1000")
+    div
+          img(src="/images/planet_main.png" style='width:400px; position:absolute; height:279px; left:0; bottom:0; margin-left: -80px; margin-bottom: -40px;')
