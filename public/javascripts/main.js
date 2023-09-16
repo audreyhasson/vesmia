@@ -220,9 +220,9 @@ imageObj5.onload = function () {
   var img = new Konva.Image({
     image: imageObj5,
     x: getXPointOnEllipse(getXRadius(h), getYRadius(h), Math.PI /(2)) - 100,
-    y: stage.height() - 50 -  getYPointOnEllipse(getXRadius(h), getYRadius(h),  Math.PI /2),
-    width: 200,
-    height: 137,
+    y: stage.height() -70 -  getYPointOnEllipse(getXRadius(h), getYRadius(h),  Math.PI /2),
+    width: 250,
+    height: 170,
     draggable: true,
     dragBoundFunc: function (pos) {
       let theta;
@@ -230,7 +230,7 @@ imageObj5.onload = function () {
       else theta =  Math.PI/2 * (1 - pos.x/getXRadius(q));
       return {
         x: getXPointOnEllipse(getXRadius(h), getYRadius(h), theta) - 100,
-        y: stage.height() - 50 -  getYPointOnEllipse(getXRadius(h), getYRadius(h), theta),
+        y: stage.height() - 70 -  getYPointOnEllipse(getXRadius(h), getYRadius(h), theta),
       };
     },
   });
